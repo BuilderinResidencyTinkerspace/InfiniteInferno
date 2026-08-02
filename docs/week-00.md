@@ -1,28 +1,82 @@
-Week 0 — Ideate
+# Week 0 — Ideate
 
-Goal this week: Land on a project idea and validate whether our planned hardware stack can realistically support it.
+**Goal this week:**
+Land on a project idea and validate whether our planned hardware stack can realistically support it.
 
-What we did
+---
 
-Brainstormed hardware project directions for the 9-week build.
-Landed on: an autonomous drone that visually tracks a person/object (bounding-box based detection), pursues it, and can map hand gestures to onboard actions (e.g. a fire-suppression/extinguishing action, or other target-spot actions).
-Named the project FALCON EYE (team: Infinite Inferno).
-Scoped the idea deliberately loose — treating tracking, pursuit, and gesture-mapped actions as independent features we may implement partially, not a fixed spec.
-Investigated whether a Pixhawk + Arduino UNO Q + camera stack could realistically handle this, factoring in power draw, onboard compute for running a vision model, and physical size/weight constraints on a small drone frame.
-Ran a comparison of Arduino UNO Q vs Raspberry Pi as the companion computer, across compute power, power draw, camera/ISP support, real-time control capability, and software ecosystem maturity.
+## What we did
 
-Problems and blockers
+* Brainstormed multiple hardware project directions for the 9-week build.
+* Finalized the concept:
+  **FALCON EYE** — an autonomous drone that:
 
-Neither board alone (without an accelerator) can run a heavy real-time detector (e.g. full YOLO) at high fps — both would need lightweight models (YOLOv8n/MobileNet-SSD) at reduced resolution to be usable on a moving platform.
-UNO Q is a newly launched board with limited documentation/community examples for MAVLink and CV workloads specifically.
-Raspberry Pi has no onboard real-time MCU, so gesture-triggered or time-critical actions would need a separate microcontroller.
+  * Visually tracks a person/object (bounding-box based detection)
+  * Pursues the target
+  * Maps hand gestures to onboard actions (e.g., fire suppression or target-specific actions)
+* Defined scope intentionally loosely:
 
-Decisions
+  * Tracking, pursuit, and gesture-mapped actions treated as modular features
+  * Allows partial implementation instead of a rigid full-stack dependency
+* Evaluated feasibility of:
 
-Proceed with idea scoping as: core = person/object tracking + pursuit via Pixhawk; stretch goals = fire/target-spot action and gesture-mapped actions.
-Defer final companion-computer choice (UNO Q vs Pi) to Week 1, after hands-on testing.
-Any autonomous flight testing must be tethered/caged first — safety-first build order.
+  * **Pixhawk + Arduino UNO Q + camera stack**
+  * Considered compute requirements, power draw, and payload constraints
+* Compared **Arduino UNO Q vs Raspberry Pi** across:
 
-Next week
+  * Compute capability
+  * Power consumption
+  * Camera/ISP support
+  * Real-time control ability
+  * Software ecosystem maturity
 
-Prototype the Pixhawk + companion computer + camera pipeline hands-on and see where the real gaps are.
+---
+
+## Problems and blockers
+
+* Neither Arduino UNO Q nor Raspberry Pi (standalone) can run heavy real-time detection models (e.g., full YOLO) at high FPS.
+* Viable approach requires:
+
+  * Lightweight models (YOLOv8n / MobileNet-SSD)
+  * Reduced resolution for real-time performance on a moving drone
+* Arduino UNO Q:
+
+  * Very new board with limited documentation
+  * Sparse examples for MAVLink integration and computer vision workloads
+* Raspberry Pi:
+
+  * Lacks a real-time MCU
+  * Time-critical actions (gesture triggers, actuation) require an additional microcontroller
+
+---
+
+## Decisions
+
+* Finalized project scope:
+
+  * **Core:** Person/object tracking + autonomous pursuit via Pixhawk
+  * **Stretch goals:** Gesture-mapped actions and fire/target-response mechanisms
+* Deferred final choice of companion computer (UNO Q vs Raspberry Pi) to Week 1 after hands-on testing
+* Established safety constraint:
+
+  * All autonomous flight testing must be **tethered or caged initially**
+
+---
+
+## Next week
+
+* Prototype full pipeline:
+
+  * Pixhawk + companion computer + camera
+* Validate:
+
+  * Real-time detection performance
+  * Latency and control loop feasibility
+  * Integration gaps between vision and flight control
+
+---
+
+## Links
+
+* **Code:**
+* **Photos / CAD:**
