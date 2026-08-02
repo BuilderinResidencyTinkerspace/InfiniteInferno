@@ -9,7 +9,7 @@ Land on a project idea and validate whether our planned hardware stack can reali
 
 * Brainstormed multiple hardware project directions for the 9-week build.
 * Finalized the concept:
-  **FALCON EYE** — an autonomous drone that:
+  **ARGUS** — an autonomous drone that:
 
   * Visually tracks a person/object (bounding-box based detection)
   * Pursues the target
