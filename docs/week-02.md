@@ -27,7 +27,7 @@ Build the initial hardware/software stack around Arduino UNO Q + Pixhawk + camer
 
   * UNO Q’s AI/vision tooling is still emerging
   * Less documentation and fewer community resources compared to Raspberry Pi
-  * Required trial-and-error for stable camera + inference pipeline setup
+  * Required trial-and-error for stable camera + inference pipeline setup.
 * **Unvalidated real-world constraints:**
 
   * Power consumption under sustained vision workload not yet characterized
