@@ -1,0 +1,36 @@
+model:
+  path: models/yolov8n.onnx
+  confidence: 0.45
+  iou_threshold: 0.45
+  threads: 4
+  inference_stride: 2
+
+camera:
+  backend: picamera2
+  source: 0
+  width: 640
+  height: 480
+
+tracking:
+  max_missed: 12
+  min_hits: 2
+  iou_threshold: 0.20
+  max_center_distance: 0.18
+
+gestures:
+  hold_frames: 4
+  cooldown_seconds: 2.0
+  keypoint_threshold: 0.35
+  actions:
+    right_hand_up: start_follow
+    left_hand_up: stop_follow
+    both_hands_up: land
+
+controller:
+  target_area_ratio: 0.18
+  deadband_x: 0.08
+  deadband_y: 0.10
+  max_yaw: 0.35
+  max_forward: 0.30
+  max_vertical: 0.25
+  target_timeout_seconds: 0.75

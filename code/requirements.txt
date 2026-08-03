@@ -1,0 +1,4 @@
+# Raspberry Pi OS provides picamera2 and OpenCV through apt. See README.md.
+numpy>=1.26,<3
+onnxruntime>=1.19,<2
+PyYAML>=6,<7
