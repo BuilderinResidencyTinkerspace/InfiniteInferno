@@ -1,0 +1,13 @@
+[project]
+name = "agni-vision"
+version = "0.1.0"
+description = "Raspberry Pi 5 person tracking and gesture intent pipeline"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=1.26,<3",
+  "onnxruntime>=1.19,<2",
+  "PyYAML>=6,<7",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

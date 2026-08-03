@@ -1,35 +1,36 @@
-import sys
-from pathlib import Path
+import unittest
 
-sys.path.append(str(Path(__file__).resolve().parent.parent / "src"))
+import numpy as np
 
-from camera import Camera
-from preprocess import preprocess
-from detector import Detector
-from postprocess import postprocess
+from src.detector import Detector
 
-cam = Camera()
 
-detector = Detector()
+class _Info:
+    def __init__(self, name, shape=None):
+        self.name = name
+        self.shape = shape
 
-print("Running detector...")
 
-while True:
+class _Session:
+    def get_inputs(self):
+        return [_Info("images", [1, 3, 320, 320])]
 
-    frame = cam.read()
+    def get_outputs(self):
+        return [_Info("output0")]
 
-    tensor = preprocess(frame)
+    def run(self, names, feed):
+        assert names == ["output0"]
+        assert feed["images"].shape == (1, 3, 320, 320)
+        return [np.ones((1, 84, 2), dtype=np.float32)]
 
-    output = detector.infer(tensor)
 
-    detections = postprocess(
-        output,
-        frame.shape[1],
-        frame.shape[0]
-    )
+class DetectorTests(unittest.TestCase):
+    def test_injected_session_uses_model_shape(self):
+        detector = Detector("unused.onnx", session=_Session())
+        self.assertEqual(detector.input_size, (320, 320))
+        output = detector.infer(np.zeros((1, 3, 320, 320), dtype=np.float32))
+        self.assertEqual(output.shape, (1, 84, 2))
 
-    print(detections)
 
-    break
-
-cam.release()
+if __name__ == "__main__":
+    unittest.main()
