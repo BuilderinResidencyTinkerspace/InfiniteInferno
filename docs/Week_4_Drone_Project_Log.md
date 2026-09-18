@@ -15,6 +15,9 @@ Refine the **overall 3D-printed design of the drone** and study the **physics an
 - Further improvements were made based on the results obtained from the previous prototype and testing.
 - The team continued working toward preparing the final components for the drone assembly.
 
+- 
+![3D printed design](https://github.com/BuilderinResidencyTinkerspace/InfiniteInferno/blob/main/docs/pics1/WhatsApp%20Image%202026-09-17%20at%2011.51.14%20PM.jpeg?raw=true)
+
 ### Drone Physics — Amrutha
 
 - **Amrutha** studied the physics involved in drone operation and flight.
