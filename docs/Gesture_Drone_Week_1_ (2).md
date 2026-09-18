@@ -35,7 +35,7 @@ multiple people, displaying bounding boxes and individual tracking IDs.
 This provided an initial working foundation for developing the
 gesture-recognition system.
 
-![Raspberry Pi Computer Vision Testing](week_1.jpeg)
+![Raspberry Pi Computer Vision Testing](https://github.com/BuilderinResidencyTinkerspace/InfiniteInferno/blob/main/docs/pics1/WhatsApp%20Image%202026-09-17%20at%2011.48.52%20PM.jpeg?raw=true)
 
 *Figure 1: Initial real-time person detection and tracking test using
 the Raspberry Pi camera.*
