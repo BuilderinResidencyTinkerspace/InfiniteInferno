@@ -16,7 +16,7 @@ Resolve the issues encountered with the **Arduino UNO Q** implementation and suc
 - After making the necessary modifications and corrections, the UNO Q started functioning properly.
 - The successful implementation allowed the team to proceed with the **computer vision system**.
 - Computer vision was successfully **implemented on the UNO Q**, marking an important step in the project's software and processing development.
-
+![uno-q cv implimentation](https://github.com/BuilderinResidencyTinkerspace/InfiniteInferno/blob/main/docs/pics1/WhatsApp%20Image%202026-09-17%20at%2011.52.14%20PM.jpeg?raw=true)
 ### Frame Strength Testing — Abhinand
 
 - At the same time, **Abhinand** worked on testing the **strength of the replaced frame parts**.
