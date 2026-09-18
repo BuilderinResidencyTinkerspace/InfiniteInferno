@@ -15,6 +15,8 @@ Complete the **hardware assembly of the drone** by successfully implementing the
 - The connections between the different components were completed and checked.
 - The team progressed toward completing the overall hardware assembly of the drone.
 
+- ![Hardware assembly](https://github.com/BuilderinResidencyTinkerspace/InfiniteInferno/blob/main/docs/pics1/WhatsApp%20Image%202026-09-17%20at%2011.53.48%20PM.jpeg?raw=true)
+
 ### Power Distribution Board Issue
 
 - During the power-up test, an issue occurred with the **Power Distribution Board (PDB)**.
