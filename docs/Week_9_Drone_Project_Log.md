@@ -35,6 +35,7 @@ Configure and calibrate the **Pixhawk flight controller** and complete the neces
 - After resolving the connection and calibration-related issues, the drone was finally prepared for flight.
 - The drone successfully completed its **first flight**, marking a major milestone in the project.
 
+![Frist flight](https://github.com/BuilderinResidencyTinkerspace/InfiniteInferno/blob/main/docs/pics1/WhatsApp%20Image%202026-09-17%20at%2011.57.30%20PM.jpeg?raw=true)
 ---
 
 ## Initial Progress
