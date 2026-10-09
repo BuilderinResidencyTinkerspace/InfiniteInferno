@@ -22,7 +22,7 @@ This README is the story of that process — what we tried, what worked, what ga
 ---
 
 <!-- PROJECT VIDEO: Replace ADD_PROJECT_VIDEO_URL with the actual YouTube/video URL. -->
-> 🎥 **Watch the ARGUS project demo:** [Add video link](https://drive.google.com/file/d/1O-GU9EswqU52o_zSH3VUwFpV-4dWD7-2/view?usp=drivesdk)
+> 🎥 **Watch the ARGUS project demo:** [![Watch the video](https://youtube.com)](https://youtu.be/kJqCdu2nPVA?si=60E0fY8HK_dobCA8)
 
 ## Table of Contents
 
