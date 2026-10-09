@@ -157,8 +157,7 @@ That first print was only one step, but it helped turn the design into something
 
 <!-- WEEK 3 VIDEO: Replace ADD_WEEK_3_VIDEO_URL with the actual video URL. -->
 > 🎥 **Week 3 — first 3D-printed part:** [Watch video](
-
-https://github.com/user-attachments/assets/8d8be39d-6964-490f-861d-9866ee75ea14
+<video src="https://github.com/user-attachments/assets/8d8be39d-6964-490f-861d-9866ee75ea14" autoplay loop muted playsinline width="100%"></video>
 
 )
 
