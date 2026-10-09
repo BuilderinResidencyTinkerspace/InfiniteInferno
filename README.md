@@ -21,8 +21,13 @@ This README is the story of that process — what we tried, what worked, what ga
 
 ---
 
-<!-- PROJECT VIDEO: Replace ADD_PROJECT_VIDEO_URL with the actual YouTube/video URL. -->
-> 🎥 **Watch the ARGUS project demo:** [![Watch the video](https://youtu.be/kJqCdu2nPVA?si=60E0fY8HK_dobCA8)]
+## Project Demo
+
+Click the thumbnail below to watch the full ARGUS demo on YouTube.
+
+[![Watch the ARGUS project demo](https://img.youtube.com/vi/kJqCdu2nPVA/hqdefault.jpg)](https://www.youtube.com/watch?v=kJqCdu2nPVA)
+
+> **Note:** GitHub README files do not reliably allow YouTube videos to autoplay as you scroll. The thumbnail opens the video on YouTube.
 
 ## Table of Contents
 
@@ -155,12 +160,10 @@ We printed a drone leg as an initial prototype. It gave us a part we could inspe
 
 That first print was only one step, but it helped turn the design into something we could test in our hands. The next challenge was improving the overall design and figuring out which materials would work for the intended frame.
 
-<!-- WEEK 3 VIDEO: Replace ADD_WEEK_3_VIDEO_URL with the actual video URL. -->
-> 🎥 **Week 3 — first 3D-printed part:**[Watch video](
+<!-- WEEK 3 VIDEO: GitHub may block autoplay in README embeds; controls remain available. -->
+**Week 3 — first 3D-printed part**
 
-https://github.com/user-attachments/assets/8d8be39d-6964-490f-861d-9866ee75ea14
-
-)
+<video src="https://github.com/user-attachments/assets/8d8be39d-6964-490f-861d-9866ee75ea14" autoplay muted playsinline controls loop width="640"></video>
 
 ## Week 4 — The frame, printing problems, and drone physics
 
@@ -229,21 +232,17 @@ The last documented stage focused on getting the flight controller configured an
 
 The first step was manual calibration in **QGroundControl (QGC)**. We followed the calibration process in the software and checked that the flight controller could detect the required sensors and complete the setup steps.
 
-<!-- WEEK 9 VIDEO 1: Replace ADD_QGC_CALIBRATION_VIDEO_URL with the actual video URL. -->
-> 🎥 **Week 9 — QGroundControl calibration:** [Watch video](
+<!-- WEEK 9 VIDEO 1: GitHub may block autoplay in README embeds; controls remain available. -->
+**Week 9 — QGroundControl calibration**
 
-https://github.com/user-attachments/assets/80f877c4-87bd-496a-a729-3533ae22f998
-
-)
+<video src="https://github.com/user-attachments/assets/80f877c4-87bd-496a-a729-3533ae22f998" autoplay muted playsinline controls loop width="640"></video>
 
 After that, we checked the ESC calibration and tested the motors individually to make sure each motor responded correctly to the expected output. During this stage, we found incorrect ESC connections and corrected them before continuing.
 
-<!-- WEEK 9 VIDEO 2: Replace ADD_ESC_MOTOR_TEST_VIDEO_URL with the actual video URL. -->
-> 🎥 **Week 9 — ESC calibration and individual motor testing:** [Watch video](
+<!-- WEEK 9 VIDEO 2: GitHub may block autoplay in README embeds; controls remain available. -->
+**Week 9 — ESC calibration and individual motor testing**
 
-https://github.com/user-attachments/assets/969b4cbf-2a42-4c6a-8200-fe3666946242
-
-)
+<video src="https://github.com/user-attachments/assets/969b4cbf-2a42-4c6a-8200-fe3666946242" autoplay muted playsinline controls loop width="640"></video>
 
 During the pre-flight checks, QGroundControl also displayed warnings, including a low-battery warning, a no-GPS warning, and a warning that no physical safety switch was detected. These messages were part of the setup and readiness checks, and they should be understood in the context of the configuration used for that test. A warning should not be ignored simply to get airborne; before future flights, the required battery, GPS, and safety-switch configuration should be checked against the flight mode and hardware being used.
 
@@ -256,7 +255,7 @@ The project also included experiments with ArduPilot and Mission Planner. That c
 After working through the configuration and connection issues, the drone completed its first flight. That was a major milestone for the physical build. It is important, though, to distinguish that milestone from the current Python vision code: the checked-in code generates flight intents and is not itself a complete autonomous flight-control stack.
 
 <!-- WEEK 9 VIDEO 3: Replace ADD_FIRST_FLIGHT_VIDEO_URL with the actual video URL. -->
-> 🎥 **Week 9 — first flight:** [Watch video](ADD_FIRST_FLIGHT_VIDEO_URL)
+🎥 **Week 9 — first flight:** [Watch video](ADD_FIRST_FLIGHT_VIDEO_URL)
 
 ---
 
@@ -272,7 +271,7 @@ This was a practical workaround because time was limited. It let me get the came
 *Placeholder: external webcam mounted on the drone, connected to the UNO Q through a USB hub powered by an external power bank.*
 
 <!-- WEEK 10 VIDEO: Replace ADD_WEEK_10_CAMERA_FLIGHT_VIDEO_URL with the actual video URL. -->
-> 🎥 **Week 10 — flight test with the camera onboard:** [Watch video](ADD_WEEK_10_CAMERA_FLIGHT_VIDEO_URL)
+🎥 **Week 10 — flight test with the camera onboard:** [Watch video](ADD_WEEK_10_CAMERA_FLIGHT_VIDEO_URL)
 
 We also carried out flight testing with the camera mounted on the drone. This let us check the physical camera mounting and see how the added webcam, USB hub, and separate power bank fit into the flight setup. The arrangement is still a temporary proof-of-concept setup, rather than the final lightweight integrated solution.
 
