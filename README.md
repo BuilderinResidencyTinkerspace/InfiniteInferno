@@ -156,7 +156,11 @@ We printed a drone leg as an initial prototype. It gave us a part we could inspe
 That first print was only one step, but it helped turn the design into something we could test in our hands. The next challenge was improving the overall design and figuring out which materials would work for the intended frame.
 
 <!-- WEEK 3 VIDEO: Replace ADD_WEEK_3_VIDEO_URL with the actual video URL. -->
-> 🎥 **Week 3 — first 3D-printed part:** [Watch video](docs/pics1/printing.mp4)
+> 🎥 **Week 3 — first 3D-printed part:** [Watch video](
+
+https://github.com/user-attachments/assets/8d8be39d-6964-490f-861d-9866ee75ea14
+
+)
 
 ## Week 4 — The frame, printing problems, and drone physics
 
@@ -226,12 +230,20 @@ The last documented stage focused on getting the flight controller configured an
 The first step was manual calibration in **QGroundControl (QGC)**. We followed the calibration process in the software and checked that the flight controller could detect the required sensors and complete the setup steps.
 
 <!-- WEEK 9 VIDEO 1: Replace ADD_QGC_CALIBRATION_VIDEO_URL with the actual video URL. -->
-> 🎥 **Week 9 — QGroundControl calibration:** [Watch video](docs/pics1/calibration.mp4)
+> 🎥 **Week 9 — QGroundControl calibration:** [Watch video](
+
+https://github.com/user-attachments/assets/80f877c4-87bd-496a-a729-3533ae22f998
+
+)
 
 After that, we checked the ESC calibration and tested the motors individually to make sure each motor responded correctly to the expected output. During this stage, we found incorrect ESC connections and corrected them before continuing.
 
 <!-- WEEK 9 VIDEO 2: Replace ADD_ESC_MOTOR_TEST_VIDEO_URL with the actual video URL. -->
-> 🎥 **Week 9 — ESC calibration and individual motor testing:** [Watch video](docs/pics1/motor_testinf.mp4)
+> 🎥 **Week 9 — ESC calibration and individual motor testing:** [Watch video](
+
+https://github.com/user-attachments/assets/969b4cbf-2a42-4c6a-8200-fe3666946242
+
+)
 
 During the pre-flight checks, QGroundControl also displayed warnings, including a low-battery warning, a no-GPS warning, and a warning that no physical safety switch was detected. These messages were part of the setup and readiness checks, and they should be understood in the context of the configuration used for that test. A warning should not be ignored simply to get airborne; before future flights, the required battery, GPS, and safety-switch configuration should be checked against the flight mode and hardware being used.
 
