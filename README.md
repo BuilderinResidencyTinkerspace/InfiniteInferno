@@ -156,8 +156,11 @@ We printed a drone leg as an initial prototype. It gave us a part we could inspe
 That first print was only one step, but it helped turn the design into something we could test in our hands. The next challenge was improving the overall design and figuring out which materials would work for the intended frame.
 
 <!-- WEEK 3 VIDEO: Replace ADD_WEEK_3_VIDEO_URL with the actual video URL. -->
-> 🎥 **Week 3 — first 3D-printed part:**
-> <video src="https://github.com/user-attachments/assets/8d8be39d-6964-490f-861d-9866ee75ea14" autoplay loop muted playsinline width="100%"></video>
+> 🎥 **Week 3 — first 3D-printed part:**[Watch video](
+
+https://github.com/user-attachments/assets/8d8be39d-6964-490f-861d-9866ee75ea14
+
+)
 
 ## Week 4 — The frame, printing problems, and drone physics
 
